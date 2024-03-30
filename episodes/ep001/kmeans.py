@@ -16,7 +16,7 @@ print(X.head())
 def get_rand_indxs(n, k):
     return(np.random.randint(0, n, size=k))
 
-np.random.seed(42) # Зафиксируем генератор случайных чисел, для воспроизводимости результатов
+np.random.seed(42) # Fix the random seed for reproducibility
 rindxs = get_rand_indxs(X.shape[0], 3)
 centers = X.iloc[rindxs, 0:2]
 
